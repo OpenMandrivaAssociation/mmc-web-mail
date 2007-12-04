@@ -4,8 +4,8 @@
 
 Summary:	Postfix/Mail module for the MMC web interface
 Name:		mmc-web-mail
-Version:	2.1.0
-Release:	%mkrel 2
+Version:	2.2.0
+Release:	%mkrel 1
 License:	GPL
 Group:		System/Servers
 URL:		http://mds.mandriva.org/
