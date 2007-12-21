@@ -14,6 +14,7 @@ Patch0:		mmc-web-mail-Makefile_fix.diff
 Requires:	postfix
 Requires:	mmc-web-base
 BuildArch:      noarch
+Buildroot:	%{_tmppath}/%{name}-buildroot
 
 %description
 Mandriva Management Console web interface designed by Linbox.
