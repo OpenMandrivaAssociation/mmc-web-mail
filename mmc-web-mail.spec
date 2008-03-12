@@ -4,7 +4,7 @@
 
 Summary:	Postfix/Mail module for the MMC web interface
 Name:		mmc-web-mail
-Version:	2.2.0
+Version:	2.3.0
 Release:	%mkrel 1
 License:	GPL
 Group:		System/Servers
@@ -12,7 +12,7 @@ URL:		http://mds.mandriva.org/
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		mmc-web-mail-Makefile_fix.diff
 Requires:	postfix
-Requires:	mmc-web-base
+Requires:	mmc-web-base >= 2.3.0
 BuildArch:      noarch
 Buildroot:	%{_tmppath}/%{name}-buildroot
 
