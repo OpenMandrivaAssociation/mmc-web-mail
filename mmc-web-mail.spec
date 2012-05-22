@@ -37,10 +37,19 @@ rm -rf %{buildroot}
 
 %makeinstall_std
 
+%find_lang mail
+
 %clean
 rm -rf %{buildroot}
 
-%files
+%files -f mail.lang
 %defattr(-,root,root,0755)
 %doc Changelog
-%{_datadir}/mmc/modules/mail
+%dir %{_datadir}/mmc/modules/mail
+%{_datadir}/mmc/modules/mail/graph
+%{_datadir}/mmc/modules/mail/includes
+%dir %{_datadir}/mmc/modules/mail/locale
+%dir %{_datadir}/mmc/modules/mail/locale/*/
+%dir %{_datadir}/mmc/modules/mail/locale/*/LC_MESSAGES
+%{_datadir}/mmc/modules/mail/mail
+%{_datadir}/mmc/modules/mail/infoPackage.inc.php
